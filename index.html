@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Weather App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+<h1 class="title">Weather</h1>
+
+
+<form id="search-form" class="search" autocomplete="off">
+<input id="city-input" name="city" type="search" placeholder="Enter city or ZIP" aria-label="City" required>
+<button id="search-btn" type="submit">Search</button>
+<button id="loc-btn" type="button" title="Use my location">Use my location</button>
+</form>
+
+
+<section id="card" class="card hidden" aria-live="polite">
+<div class="card-header">
+<h2 id="location">—</h2>
+<small id="time">—</small>
+</div>
+
+
+<div class="weather-row">
+<img id="icon" alt="weather icon" class="icon" src=""/>
+<div class="details">
+<div class="temp" id="temp">—°C</div>
+<div id="desc" class="desc">—</div>
+</div>
+</div>
+
+
+<ul class="meta">
+<li>Feels like: <span id="feels">—°C</span></li>
+<li>Humidity: <span id="humidity">—%</span></li>
+<li>Wind: <span id="wind">— m/s</span></li>
+</ul>
+
+
+<div id="error" class="error" role="status"></div>
+</section>
+
+
+<footer class="footer">
+<small>Data from OpenWeatherMap. Replace <code>API_KEY</code> in <code>script.js</code>.</small>
+</footer>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>

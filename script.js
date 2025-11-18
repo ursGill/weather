@@ -1,4 +1,4 @@
-const API_KEY = '5b1ad0f5c1a573a581149a42cdc1d3b7'; // <- replace with your key
+const API_KEY = 'ae5f6c93aeedbcc3324ad636b06e772d'; // <- replace with your key
 
 
 async function fetchWeatherByCoords(lat, lon){
